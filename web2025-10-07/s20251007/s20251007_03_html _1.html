@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let It Go - 冰雪奇緣 (Frozen)</title>
+    <style>
+        /* 1. 核心樣式 */
+        :root {
+            --color-primary: #007bff; /* 主要操作色 (藍色) */
+            --color-secondary: #377777; /* 輔助深藍綠 (Elsa的代表色) */
+            --color-light: #e6f3ff; /* 淺雪藍 */
+            --color-dark: #333; /* 主要文字色 */
+            --gradient-background: linear-gradient(to top, #c7e5ff, #e6f3ff);
+            --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.1);
+            --shadow-deep: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        body {
+            font-family: 'Arial', 'Helvetica Neue', Helvetica, 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+            background: var(--gradient-background);
+            color: var(--color-dark);
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.8;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-deep);
+            border: 1px solid rgba(255, 255, 255, 0.5); /* 輕微的冰晶邊緣 */
+        }
+
+        /* 2. 標題樣式 */
+        h3 {
+            color: var(--color-secondary);
+            font-size: 3em;
+            margin-bottom: 25px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1), 0 0 15px rgba(55, 119, 119, 0.5); /* 增加冰冷的光暈效果 */
+            font-weight: 700;
+        }
+
+        /* 3. 歌詞樣式 */
+        .lyrics {
+            font-size: 1.15em;
+            font-style: italic;
+            margin: 40px 0;
+            text-align: center; /* 歌詞置中 */
+            background: var(--color-light);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid var(--color-secondary);
+        }
+
+        .lyrics br {
+            line-height: 1.5;
+        }
+
+        /* 4. 影片連結樣式 */
+        h2 {
+            font-size: 1.5em;
+            margin: 30px 0;
+        }
+
+        h2 a {
+            color: var(--color-secondary);
+            text-decoration: none;
+            border: 2px solid var(--color-secondary);
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            font-weight: 600;
+        }
+
+        h2 a:hover {
+            background: var(--color-secondary);
+            color: white;
+            box-shadow: 0 4px 10px rgba(55, 119, 119, 0.4);
+            transform: translateY(-2px);
+        }
+
+        /* 5. 影片容器樣式 */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 40px auto;
+            max-width: 700px; /* 擴大影片顯示寬度 */
+            border-radius: 12px;
+            box-shadow: var(--shadow-deep);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* 6. 響應式設計 */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+            .container {
+                padding: 25px;
+                border-radius: 15px;
+            }
+            h3 {
+                font-size: 2.5em;
+                margin-bottom: 20px;
+            }
+            .lyrics {
+                font-size: 1em;
+                padding: 20px;
+            }
+            h2 a {
+                font-size: 0.9em;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Let It Go</h3>
+        <p style="font-style: italic; color: #555;">— From Disney's Frozen (冰雪奇緣) —</p>
+
+        <div class="lyrics">
+            The snow glows white on the mountain tonight<br>
+            Not a footprint to be seen<br>
+            A kingdom of isolation and it looks like I’m the queen<br>
+            The wind is howling like this swirling storm inside<br>
+            Couldn’t keep it in, heaven knows I tried<br><br>
+
+            **Don’t let them in, don’t let them see**<br>
+            **Be the good girl you always have to be**<br>
+            **Conceal, don’t feel, don’t let them know**<br>
+            Well now they know<br><br>
+
+            **Let it go, let it go**<br>
+            **Can’t hold it back anymore**<br>
+            **Let it go, let it go**<br>
+            **Turn away and slam the door**<br>
+            I don’t care what they’re going to say<br>
+            Let the storm rage on<br>
+            The cold never bothered me anyway.
+        </div>
+
+        <h2>
+            <a href="https://www.youtube.com/watch?v=Zgj6kfOPlAU" target="_blank">播放官方音樂影片 (Official Music Video)</a>
+        </h2>
+
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/L0MK7qz13bU?si=Roqh2tadSoosL2wT"
+                title="YouTube video player - Let It Go (Movie Version)" 
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <p style="font-size: 0.9em; color: #888;">(上方為電影片段版本)</p>
+    </div>
+</body>
+
+</html>
